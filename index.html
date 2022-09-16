@@ -57,12 +57,12 @@
   </header>
   <main>
     <div class="overlay">
-        <section class="hero">
-            <div class="container">
-              <h1 class="hero-h1">Ефективні рішення для вашого бізнесу</h1>
-              <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-h1">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+        </div>
+      </section>
     </div>
     <section class="section" id="studio">
       <div class="container">
@@ -353,7 +353,59 @@
             </svg>
           </div>
         </button>
+        <form class="register-form" name="register-form">
+          <p class="register-form-title">Залиште свої дані, ми вам передзвонимо</p>
+
+          <div class="register-form-group" role="group">
+            <label class="register-form-field" for="name-input">
+              <span class="register-form-label">Ім'я</span>
+              <input class="register-form-input" type="text" name="name-input" required minlength="3" />
+              <svg width="18px" height="18px" class="register-form-svg">
+                <use href="./images/icons/symbol-defs.svg#icon-name"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field" for="tel-input">
+              <span class="register-form-label">Телефон</span>
+              <input class="register-form-input" type="tel" name="tel-input" required minlength="12" maxlength="13" />
+              <svg width="18px" height="18px" class="register-form-svg">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field" for="mail-input">
+              <span class="register-form-label">Пошта</span>
+              <input class="register-form-input" type="email" name="mail-input" required />
+              <svg width="18px" height="18px" class="register-form-svg">
+                <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </label>
+
+            <label class="register-form-field" for="comment-input">
+              <span class="register-form-label">Коментар</span>
+              <textarea class="register-form-message register-form-input" name="comment-input" rows="8"
+                placeholder="Введіть текст"></textarea>
+            </label>
+          </div>
+
+          <label class="register-form-agreement">
+            <input class="register-form-checkbox visually-hidden" type="checkbox" id=""
+              required />
+            <svg class="register-form-icons" width="16" height="15">
+              <use class="icon-unchecked" href="./images/icons/symbol-defs.svg#icon-unchecked"></use>
+              <use class="icon-checked" href="./images/icons/symbol-defs.svg#icon-checked"></use>
+            </svg>
+            <span class="register-form-desc">
+              Погоджуюся з розсилкою та приймаю
+              <a class="register-form-link" href="" target="_blank">Умови договору</a>
+            </span>
+          </label>
+
+          <button class="register-form-btn btn" type="submit">Відправити</button>
+        </form>
       </div>
+    </div>
+    </div>
     </div>
   </main>
   <footer id="contacts" class="footer">
@@ -408,6 +460,21 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="wrapper">
+        <form action="" class="footer-subscribe">
+          <label for="email-footer" class="email-footer-title">
+            <span>Підпишіться на розсилку</span>
+            <div class="footer-subscribe-wrapper">
+            <input type="email" name="email-footer" placeholder="E-mail" class="email-footer">
+            <button type="submit" class="footer-subscribe-button">Підписатися
+              <svg height="24px" width="24px">
+                <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+            </div>
+          </label>
+        </form>
       </div>
     </div>
   </footer>

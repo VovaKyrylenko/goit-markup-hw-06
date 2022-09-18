@@ -624,7 +624,6 @@ ul.clients-list li.item:hover svg {
 /* custom container for footer */
 .footer .container {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 
@@ -726,6 +725,14 @@ button.footer-subscribe-button {
   color: var(--btn-cl-hover);
   display: block;
   margin-bottom: 20px;
+}
+
+.wrapper-address {
+  margin-right: 70px;
+}
+
+.wrapper-subscribe {
+  margin-left: auto;
 }
 
 /* !MODAL */

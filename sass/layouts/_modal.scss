@@ -1,0 +1,123 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: scale var(--animation-time) var(--transition-timing-function);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  background: var(--light-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform var(--animation-time) var(--transition-timing-function);
+
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) scale(0);
+  &__close {
+    position: absolute;
+
+    right: 8px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover .icon,
+    &:focus .icon {
+      fill: var(--btn-bg-cl-hover);
+    }
+  }
+  &__icon {
+    width: 11px;
+    transition: fill var(--animation-time) var(--transition-timing-function);
+  }
+}
+.register-form {
+  &__agreement {
+  }
+  &__button {
+  }
+  &__checkbox {
+  }
+  &__desc {
+  }
+  &__field {
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__icon-checked {
+  }
+  &__icon-unchecked {
+  }
+  &__icons {
+  }
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    width: 448px;
+    height: 40px;
+    text-indent: 42px;
+    transition: outline var(--animation-time) var(--transition-timing-function);
+
+    &:focus-visible {
+      outline: 1px solid var(--accent-cl);
+    }
+  }
+  &__label {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    color: var(--light-text-cl);
+  }
+  &__link {
+  }
+  &__message {
+    &::placeholder {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  &__svg {
+  }
+  &__title {
+    @include typography($fs: 20px, $lh: 23px, $fw: 700);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}

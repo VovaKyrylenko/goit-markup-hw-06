@@ -92,9 +92,9 @@ button {
   margin: auto;
 } */
 
-.section {
+/* .section {
   padding: 94px 0;
-}
+} */
 
 /* !LOGOTYPE */
 
@@ -251,17 +251,17 @@ a.nav-link:focus {
 /* !PORTFOLIO */
 
 /* Filter list */
-.filter-list {
+/* .filter-list {
   display: flex;
   margin: auto;
   gap: 8px;
   justify-content: center;
   padding: 0;
   margin-bottom: 50px;
-}
+} */
 
 /* Filter Button */
-.filter-btn {
+/* .filter-btn {
   background-color: var(--btn-bg-cl);
   font-weight: 500;
   font-size: 16px;
@@ -272,55 +272,55 @@ a.nav-link:focus {
   transition-property: color, background-color, box-shadow;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--transition-timing-function);
-}
+} */
 
 /* filter button hover/active */
-.filter-btn:hover,
+/* .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--btn-bg-cl-hover);
   color: var(--btn-cl-hover);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* list with products */
-.product-list {
+/* .product-list {
   display: flex;
   width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
-}
+} */
 
 /* Every product in product-list */
-ul.product-list li.item {
+/* ul.product-list li.item {
   width: 370px;
-}
+} */
 
-ul.product-list li.item a {
+/* ul.product-list li.item a {
   display: block;
   transition-property: box-shadow;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--transition-timing-function);
-}
+} */
 
 /* Every product in product-list :hover */
-ul.product-list li.item a:hover {
+/* ul.product-list li.item a:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 /* Image in product */
-li.item img.product-img {
+/* li.item img.product-img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 /* thumb for hover text */
-li.item div.product-thumb {
+/* li.item div.product-thumb {
   position: relative;
   overflow: hidden;
-}
+} */
 
 /* thumb-overlay */
 div.product-thumb div.thumb-overlay {
@@ -344,33 +344,33 @@ div.product-thumb div.thumb-overlay {
   transition-timing-function: var(--transition-timing-function);
 }
 
-ul.product-list li.item:hover .thumb-overlay {
+/* ul.product-list li.item:hover .thumb-overlay {
   transform: translateY(0);
-}
+} */
 
 /* hover text */
-div.product-thumb p.thumb-text {
+/* div.product-thumb p.thumb-text {
   font-size: 18px;
   line-height: calc(28 / 18);
   color: var(--btn-cl-hover);
-}
+} */
 
 /* wraper with text in product */
-li.item div.product-wrp {
+/* li.item div.product-wrp {
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-cl);
   border-right: 1px solid var(--border-cl);
   border-left: 1px solid var(--border-cl);
-}
+} */
 
 /* text with name of product */
-.product-name {
+/* .product-name {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-}
+} */
 
 /* text with type of product */
 .product-type {
@@ -890,37 +890,37 @@ div.modal div.close:active svg {
   line-height: calc(24 / 14);
 } */
 
-.register-form-desc {
+/* .register-form-desc {
   color: var(--secondary-text-cl);
   display: block;
-}
+} */
 
-.register-form-input:focus-visible ~ .register-form-svg {
+/* .register-form-input:focus-visible ~ .register-form-svg {
   fill: var(--btn-bg-cl-hover);
-}
+} */
 
-.register-form-svg {
+/* .register-form-svg {
   position: absolute;
   left: 12px;
   top: 50%;
-}
+} */
 
-.register-form-field {
+/* .register-form-field {
   position: relative;
-}
+} */
 
-.icon-checked {
+/* .icon-checked {
   opacity: 0;
   transition: opacity var(--animation-time) var(--transition-timing-function);
-}
+} */
 
-.register-form-checkbox:checked + .register-form-icons .icon-checked {
+/* .register-form-checkbox:checked + .register-form-icons .icon-checked {
   opacity: 1;
-}
-
+} */
+/* 
 .register-form-agreement {
   display: flex;
   gap: 7px;
   align-items: center;
   margin-bottom: 30px;
-}
+} */

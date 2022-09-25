@@ -347,9 +347,9 @@
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="modal__button-close" data-modal-close>
+        <button class="modal__button-close" type="button" data-modal-close>
           <div class="modal__close">
-            <svg class="modal__icon">
+            <svg class="modal__icon" width="11px" height="11px">
               <use href="./images/icons/symbol-defs.svg#icon-close"></use>
             </svg>
           </div>
@@ -389,11 +389,12 @@
             </label>
           </div>
 
-          <label class="register-form__agreement">
-            <input class="register-form__checkbox visually-hidden" type="checkbox" id="" required />
+          <label class="register-form__agreement" for="register-form__checkbox">
+            <input class="register-form__checkbox visually-hidden" type="checkbox" id="register-form__checkbox"
+              required />
             <svg class="register-form__icons" width="16" height="15">
-              <use class="register-form__icon-unchecked" href="./images/icons/symbol-defs.svg#icon-unchecked"></use>
-              <use class="register-form__icon-checked" href="./images/icons/symbol-defs.svg#icon-checked"></use>
+              <use class="register-form__icon--unchecked" href="./images/icons/symbol-defs.svg#icon-unchecked"></use>
+              <use class="register-form__icon--checked" href="./images/icons/symbol-defs.svg#icon-checked"></use>
             </svg>
             <span class="register-form__desc">
               Погоджуюся з розсилкою та приймаю
@@ -415,7 +416,7 @@
         <address>
           <ul class="footer__list">
             <li>
-              <a href="https://goo.gl/maps/QiQsdTo4LieZQjPv9" class="footer__address">м. Київ,
+              <a href="https://goo.gl/maps/QiQsdTo4LieZQjPv9" class="footer__address footer__contact">м. Київ,
                 пр-т
                 Лесі
                 Українки, 26</a>

@@ -12,6 +12,12 @@
   &__contact {
     @include typography($lh: 24px);
     color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--animation-time) var(--transition-timing-function);
+    &:hover,
+    &focus {
+      color: var(--accent-cl);
+    }
   }
   &__email {
     border: 1px solid rgba(255, 255, 255, 0.3);

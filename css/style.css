@@ -851,14 +851,14 @@ div.modal div.close:active svg {
   color: rgba(117, 117, 117, 0.5);
 } */
 
-.register-form-message.register-form-input {
+/* .register-form-message.register-form-input {
   height: 120px;
   text-indent: 0;
   font-size: 12px;
   padding: 16px 12px;
-}
+} */
 
-.register-form-btn {
+/* .register-form-btn {
   text-align: center;
   width: 200px;
   height: 50px;
@@ -871,24 +871,24 @@ div.modal div.close:active svg {
   letter-spacing: 0.06em;
   color: var(--btn-cl-hover);
   transition: background var(--animation-time) var(--transition-timing-function);
-}
+} */
 
-.register-form-btn:hover {
+/* .register-form-btn:hover {
   background: #188ce8;
-}
+} */
 
-.register-form {
+/* .register-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
+} */
+/* 
 .register-form-link {
   color: var(--btn-bg-cl-hover);
   text-decoration: underline;
   line-height: calc(24 / 14);
-}
+} */
 
 .register-form-desc {
   color: var(--secondary-text-cl);

@@ -19,6 +19,8 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity var(--animation-time) var(--transition-timing-function),
+    visibility var(--animation-time) var(--transition-timing-function);
 }
 .modal {
   position: absolute;
@@ -31,6 +33,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation-time) var(--transition-timing-function);
 
   padding: 40px;
@@ -97,14 +100,11 @@
     display: block;
     color: var(--light-text-cl);
   }
-  &__field {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
+  &__label {
+    @include typography($fs: 12px, $lh: 14px, $ls: 0.01em);
     margin-bottom: 4px;
-    position: relative;
 
-    color: var(--secondary-text-cl);
+    color: var(--light-text-cl);
   }
   &__group {
     display: flex;
@@ -131,7 +131,7 @@
       outline: 1px solid var(--accent-cl);
     }
   }
-  &__label {
+  &__field {
     position: relative;
   }
   &__link {
